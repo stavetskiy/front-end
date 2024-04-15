@@ -20,6 +20,14 @@ module.exports = {
       filename: 'about.html',
       chunks: ['about'],
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+          {
+              from: path.resolve(__dirname, 'src/assets/images'),
+              to: path.resolve(__dirname, 'dist/assets/images')
+          }
+      ]
+     }),
   ],
   devServer: {
     static: {
