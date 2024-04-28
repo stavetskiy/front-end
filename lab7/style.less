@@ -1,0 +1,60 @@
+@color_1: #F4616C;
+@color_2: #963B42;
+@color_3: #78040D;
+@font_family_1: Arial, sans-serif;
+@background_color_1: #F49BA2;
+
+body {
+	font-family: @font_family_1;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(#E01625, #963B42, #78040D, #F4616C, #F49BA2);
+	color: @color_1;
+}
+header {
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+}
+footer {
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	background-color: @background_color_1;
+	padding: 10px 0;
+}
+main {
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+}
+a {
+	color: @color_2;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+h1 {
+	color: @color_3;
+}
+h2 {
+	color: @color_3;
+}
+nav {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		text-align: center;
+		li {
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+}
+#biography {
+	background-color: @background_color_1;
+	padding: 20px;
+}
