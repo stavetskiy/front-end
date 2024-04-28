@@ -1,60 +1,60 @@
-@color0: #78040d; 
-@color1: #f49ba2;
-@color2: #963b42; 
-@color3: #f4616c;
-
-@width0: 80%; 
-
+@color_1: #F4616C;
+@color_2: #963B42;
+@color_3: #78040D;
+@font_family_1: Arial, sans-serif;
+@background_color_1: #F49BA2;
 
 body {
-	background: linear-gradient(#E01625, #963B42, @color0, #F4616C, @color1);
-	color: @color3;
-	font-family: Arial, sans-serif;
+	font-family: @font_family_1;
 	margin: 0;
 	padding: 0;
+	background: linear-gradient(#E01625, #963B42, #78040D, #F4616C, #F49BA2);
+	color: @color_1;
 }
 header {
+	width: 90%;
 	margin: 0 auto;
 	padding: 20px;
-	width: @width0;
 }
 footer {
-	background-color: @color1;
+	width: 90%;
 	margin: 0 auto;
-	padding: 10px 0;
 	padding: 20px;
 	text-align: center;
-	width: @width0;
+	background-color: @background_color_1;
+	padding: 10px 0;
 }
 main {
+	width: 90%;
 	margin: 0 auto;
 	padding: 20px;
-	width: @width0;
 }
 a {
-	color: @color2;
+	color: @color_2;
 	text-decoration: none;
 	&:hover {
 		text-decoration: underline;
 	}
 }
 h1 {
-	color: @color0;
+	color: @color_3;
 }
 h2 {
-	color: @color0;
+	color: @color_3;
 }
 nav {
 	ul {
 		list-style-type: none;
 		padding: 0;
+		margin: 0;
+		text-align: center;
 		li {
-			display: inline;
-			margin-right: 20px;
+			display: block;
+			margin-bottom: 10px;
 		}
 	}
 }
 #biography {
-	background-color: @color1;
+	background-color: @background_color_1;
 	padding: 20px;
 }
